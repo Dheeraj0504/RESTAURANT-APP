@@ -1,4 +1,5 @@
 import {Component} from 'react'
+import Cookies from 'js-cookie'
 import Loader from 'react-loader-spinner'
 
 import Header from '../Header'
@@ -19,7 +20,6 @@ class Home extends Component {
     apiStatus: apiStatusConstants.initial,
     restaurantData: {},
     activeTabId: '',
-    count: 0,
   }
 
   componentDidMount() {
@@ -30,10 +30,14 @@ class Home extends Component {
     this.setState({
       apiStatus: apiStatusConstants.inProgress,
     })
+    const jwtToken = Cookies.get('jwt_token')
     const url =
       'https://apis2.ccbp.in/restaurant-app/restaurant-menu-list-details'
     const options = {
       method: 'GET',
+      headers: {
+        Authorization: `Bearer ${jwtToken}`,
+      },
     }
 
     const response = await fetch(url, options)
@@ -81,21 +85,6 @@ class Home extends Component {
     this.setState({activeTabId: id})
   }
 
-  onIncreaseQuantity = () => {
-    // console.log('Btn clicked')
-    this.setState(prevState => ({count: prevState.count + 1}))
-  }
-
-  onDecreaseQuantity = () => {
-    // console.log('Btn clicked')
-    const {count} = this.state
-    if (count === 0) {
-      this.setState({count: 0})
-    } else {
-      this.setState(prevState => ({count: prevState.count - 1}))
-    }
-  }
-
   renderSuccessView = () => {
     const {restaurantData, activeTabId} = this.state
     // console.log(restaurantData)
@@ -126,12 +115,7 @@ class Home extends Component {
         <div className="dish-items-containers">
           <ul className="dish-items-menu">
             {categoryDishes.map(each => (
-              <DishItems
-                key={each.dishId}
-                dish={each}
-                onIncrease={this.onIncreaseQuantity}
-                onDecrease={this.onDecreaseQuantity}
-              />
+              <DishItems key={each.dishId} dish={each} />
             ))}
           </ul>
         </div>
@@ -161,11 +145,11 @@ class Home extends Component {
   }
 
   render() {
-    const {count} = this.state
+    // console.log(restaurantName)
     return (
       <>
         <div className="home-container">
-          <Header count={count} />
+          <Header />
           {this.renderApiStatus()}
         </div>
       </>

@@ -64,3 +64,20 @@
   margin-bottom: 25px;
 }
 
+.link {
+  list-style-type: none;
+  text-decoration: none;
+}
+.logout-button {
+  font-family: 'Roboto';
+  font-weight: 600;
+  font-size: 14px;
+  padding: 9px 18px;
+  color: #ffffff;
+  background-color: #0967d2;
+  border: none;
+  border-radius: 4px;
+  margin-left: 25px;
+  cursor: pointer;
+  outline: none;
+}

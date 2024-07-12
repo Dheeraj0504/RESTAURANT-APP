@@ -23,7 +23,7 @@
 }
 .dish-items-containers {
   display: flex;
-  flex-direction: column;  
+  flex-direction: column;
 }
 .dish-items-menu {
   list-style-type: none;
