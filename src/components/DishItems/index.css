@@ -1,0 +1,176 @@
+.dish-items-card {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: rgb(157, 152, 152);
+  justify-content: space-between;
+}
+.card-container {
+  padding: 10px;
+  display: flex;
+  justify-content: flex-start;
+}
+.box {
+  border-style: solid;
+  border-radius: 2px;
+  border-width: 1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  width: 35px;
+  height: 35px;
+  margin: 0px;
+  margin-top: 5px;
+  border-color: rgb(51, 114, 51);
+  background-color: rgb(228, 226, 226);
+}
+.high-rate-props {
+  border-color: rgb(115, 3, 3);
+  background-color: rgb(228, 226, 226);
+}
+
+.circle {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: rgb(51, 114, 51);
+}
+.high-rate-circle {
+  background-color: rgba(189, 31, 31, 0.845);
+}
+.dish-details-container {
+  margin: 0px;
+  margin-left: 12px;
+  max-width: 120px;
+}
+@media screen and (min-width: 768px) {
+  .dish-details-container {
+    min-width: 250px;
+    max-width: 520px;
+  }
+}
+.name-text {
+  margin: 0px;
+  font-size: 20px;
+}
+.price-text {
+  margin: 0px;
+  font-size: 16px;
+  font-weight: 530;
+  margin-top: 8px;
+  color: rgb(48, 50, 50);
+}
+.description {
+  margin: 0px;
+  margin-top: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  color: rgb(148, 143, 143);
+}
+.controller-container {
+  display: flex;
+  align-items: center;
+  background-color: #00923f;
+  width: fit-content;
+  min-width: 150px;
+  justify-content: space-between;
+  padding: 10px;
+  border-radius: 50px;
+  margin-top: 8px;
+}
+
+.quantity-button {
+  padding: 5px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: #fff;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.quantity {
+  margin: 0 10px;
+  color: #fff;
+  font-size: 18px;
+}
+
+.not-availability-text {
+  font-weight: 500;
+  font-size: 18px;
+  margin: 5px 0;
+  color: rgb(202, 47, 47);
+}
+
+.addon-availability-text {
+  font-weight: 500;
+  font-size: 18px;
+  margin: 5px 0;
+  color: #734ff4;
+}
+
+.calories-num {
+  font-size: 14px;
+  font-weight: 530;
+  color: rgb(246, 140, 33);
+  margin-bottom: 25px;
+}
+.calories-num-sm {
+  align-self: center;
+}
+.calories-num-lg {
+  display: none;
+}
+.cal-img-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.dish-img {
+  width: 100px;
+  height: 100px;
+  margin: 10px 10px 0px 0px;
+  border-radius: 8px;
+}
+
+/* .add-to-cart {
+  background-color: rgb(235, 219, 5);
+  outline: none;
+  border-style: none;
+  height: 40px;
+  width: 160px;
+  font-size: 14px;
+  font-weight: 530;
+  color: rgb(0, 0, 0);
+  border-radius: 8px;
+  margin-top: 20px;
+  padding: 10px;
+} */
+@media screen and (min-width: 768px) {
+  .dish-item-card {
+    justify-content: space-between;
+  }
+  .calories-num-sm {
+    display: none;
+  }
+  .calories-num-lg {
+    display: flex;
+    margin-right: 30px;
+  }
+  .cal-img-card {
+    margin: 10px;
+  }
+  .dish-img {
+    width: 165px;
+    height: 165px;
+    border-radius: 8px;
+  }
+  .calories-num {
+    font-size: 18px;
+  }
+}

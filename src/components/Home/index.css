@@ -1,0 +1,41 @@
+.home-container {
+  min-height: 100vh;
+}
+.loader-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.tabs-menu-container {
+  box-shadow: 0px 10px 10px -15px #111;
+  margin: 0px;
+  width: 100%;
+}
+.tabs-container {
+  display: flex;
+  list-style-type: none;
+  overflow-y: auto;
+  min-width: 100%;
+  padding: 0px;
+  margin: 0px;
+}
+.dish-items-containers {
+  display: flex;
+  flex-direction: column;  
+}
+.dish-items-menu {
+  list-style-type: none;
+  margin: 25px;
+  padding: 0px;
+}
+.failure-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.errorMsg {
+}

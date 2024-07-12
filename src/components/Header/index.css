@@ -1,0 +1,66 @@
+.header-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding:25px;
+  box-shadow: 0px 10px 10px -15px #111;
+}
+.heading {
+  font-family: 'Roboto';
+  font-weight: 600;
+  font-size: 35px;
+  cursor: pointer;
+  margin: 0;
+}
+@media screen and (max-width: 576px) {
+  .heading {
+    font-size: 25px;
+  }
+}
+.nav-items-container {
+  display: flex;
+  align-items: center;
+}
+.cart-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0;
+}
+
+.my-order-text {
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-size: 18px;
+  color: #585555;
+  margin: 0px 8px 0px 0px;
+}
+@media screen and (max-width: 576px) {
+  .my-order-text {
+    display: none;
+  }
+}
+.cart-icon {
+  font-size: 40px;
+  color: rgb(83, 80, 80);
+}
+.cart-card {
+  display: flex;
+  align-items: center;
+}
+
+.cart-count {
+  background-color: rgb(248, 110, 110);
+  height: 22px;
+  width: 22px;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 15px;
+  color: #ffffff;
+  font-weight: 700px;
+  position: absolute;
+  margin-left: 25px;
+  margin-bottom: 25px;
+}
+

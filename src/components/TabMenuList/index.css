@@ -1,0 +1,25 @@
+.each-tab-item {
+  display: flex;
+  padding: 15px 0px;
+  text-align: center;
+  cursor: pointer;
+  flex-shrink: 0;
+  flex-grow: 1;
+  margin-right: 32px;
+  margin-left: 16px;
+}
+.tab-buttons {
+  color: inherit;
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-size: 18px;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+.active-tab-text {
+  color: #cf2b0e;
+  border-bottom: 2px solid #cf2b0e;
+  font-weight: 600;
+}
